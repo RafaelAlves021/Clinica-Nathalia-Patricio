@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Nathalia Patricio | Odontologia e Estética Facial</title>
+    <meta name="description" content="Sorrisos felizes e autoestima renovada. Especialidades odontológicas, lentes em resina, clareamento dental e estética facial na Barra / Recreio, Rio de Janeiro - RJ.">
+    
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="Clínica Nathalia Patricio | Odontologia e Estética Facial">
+    <meta property="og:description" content="Sorrisos felizes e autoestima renovada na Barra da Tijuca / Recreio, RJ.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="theme-color" content="#C2185B">
+
+    <!-- Favicon SVG (Ícone de Dente Estilizado) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23C2185B'><path d='M12 2C8.5 2 6 4.5 6 7.5c0 1.7.7 3.2 1.8 4.3.4.4.6 1 .5 1.5l-.5 3c-.2 1.1.7 2 1.8 2h1.4c.5 0 1-.2 1.3-.6l.7-.9.7.9c.3.4.8.6 1.3.6h1.4c1.1 0 2-.9 1.8-2l-.5-3c-.1-.5.1-1.1.5-1.5 1.1-1.1 1.8-2.6 1.8-4.3C18 4.5 15.5 2 12 2z'/></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JSON-LD LocalBusiness / Dentist -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Clínica Nathalia Patricio",
+      "image": "https://destravacommerce.com.br/assets/logo-placeholder.png",
+      "@id": "",
+      "url": "https://instagram.com/clinicanathaliapatricio",
+      "telephone": "+5521995103410",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. das Américas, 13685 - Sala 379 (A4 Offices)",
+        "addressLocality": "Rio de Janeiro",
+        "addressRegion": "RJ",
+        "postalCode": "22790-701",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.0035,
+        "longitude": -43.4611
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "55"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Skip Link for Accessibility -->
+    <a class="visually-hidden-focusable p-2 bg-dark text-white position-fixed top-0 start-0 z-3" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="fixed-top glass-header">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3">
+            <div class="container">
+                <!-- LOGO -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <!-- <!-- TROCAR PELO LOGO OFICIAL SE DESEJAR --> -->
+                    <div class="logo-icon-wrapper">
+                        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C8.5 2 6 4.5 6 7.5c0 1.7.7 3.2 1.8 4.3.4.4.6 1 .5 1.5l-.5 3c-.2 1.1.7 2 1.8 2h1.4c.5 0 1-.2 1.3-.6l.7-.9.7.9c.3.4.8.6 1.3.6h1.4c1.1 0 2-.9 1.8-2l-.5-3c-.1-.5.1-1.1.5-1.5 1.1-1.1 1.8-2.6 1.8-4.3C18 4.5 15.5 2 12 2z"/>
+                        </svg>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <span class="brand-title font-serif">CLÍNICA</span>
+                        <span class="brand-subtitle font-sans">Nathalia Patricio</span>
+                    </div>
+                </a>
+
+                <!-- MOBILE TOGGLE -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- OFFCANVAS / MENU -->
+                <div class="offcanvas offcanvas-end glass-offcanvas text-dark bg-dark-custom" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header border-bottom border-light border-opacity-10">
+                        <h5 class="offcanvas-title font-serif text-white" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto align-lg-items-center gap-lg-2">
+                            <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#tratamentos">Tratamentos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#antes-depois">Antes & Depois</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#clareamento">Clareamento</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#diferenciais">Diferenciais</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contato">Localização</a></li>
+                        </ul>
+                        <div class="d-flex align-items-center mt-3 mt-lg-0">
+                            <a href="https://wa.me/5521995103410?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20Clínica%20Nathalia%20Patricio." target="_blank" rel="noopener" class="btn btn-glow w-100 w-lg-auto">
+                                <i class="bi bi-whatsapp me-2"></i> Agendar Avaliação
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+
+        <!-- HERO SECTION -->
+        <section id="inicio" class="hero-section min-vh-100 d-flex align-items-center position-relative overflow-hidden pt-5">
+            <div class="hero-glow-blob"></div>
+            <div class="hero-glow-blob-2"></div>
+            
+            <div class="container position-relative z-2 py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <!-- Google Rating Badge -->
+                        <div class="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill glass-badge mb-4 animate-fade-in">
+                            <span class="text-warning">★★★★★</span>
+                            <span class="text-white small fw-500">4,7 no Google · 55 avaliações</span>
+                        </div>
+
+                        <h1 class="hero-title font-serif display-4 fw-bold text-white mb-3">
+                            Sorrisos felizes e <span class="text-gradient">autoestima renovada</span>
+                        </h1>
+                        <p class="hero-subtitle text-light-muted lead mb-4">
+                            Odontologia completa e estética facial avançada com atendimento humanizado, tecnologia de ponta e planejamento personalizado na Barra da Tijuca / Recreio, Rio de Janeiro.
+                        </p>
+
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-4">
+                            <a href="https://wa.me/5521995103410?text=Olá!%20Gostaria%20de%20marcar%20uma%20avaliação." target="_blank" rel="noopener" class="btn btn-glow btn-lg px-4">
+                                <i class="bi bi-whatsapp me-2"></i> Falar no WhatsApp
+                            </a>
+                            <a href="#tratamentos" class="btn btn-glass btn-lg px-4">
+                                Conhecer Tratamentos
+                            </a>
+                        </div>
+
+                        <!-- Micro Stats / Highlights -->
+                        <div class="row g-3 pt-3 border-top border-light border-opacity-10 text-start">
+                            <div class="col-6 col-sm-4">
+                                <div class="h3 font-serif text-gradient mb-0 fw-bold">Mesmo Dia</div>
+                                <small class="text-muted-light">Lentes em Resina</small>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <div class="h3 font-serif text-gradient mb-0 fw-bold">100%</div>
+                                <small class="text-muted-light">Planejamento Exclusivo</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="hero-visual-wrapper position-relative mx-auto">
+                            <div class="organic-frame-glow"></div>
+                            <!-- <!-- TROCAR PELA FOTO OFICIAL DA DRA. NATHALIA OU DA CLÍNICA --> -->
+                            <div class="organic-image-container glass-card p-4 text-center position-relative">
+                                <div class="hero-illustration py-5">
+                                    <div class="floating-badge card-float-1 glass-card p-3 shadow-lg">
+                                        <i class="bi bi-shield-check text-pink fs-3 mb-1 d-block"></i>
+                                        <span class="small fw-bold text-white">Excelência em Odontologia</span>
+                                    </div>
+                                    <div class="floating-badge card-float-2 glass-card p-3 shadow-lg">
+                                        <i class="bi bi-heart-pulse text-pink fs-3 mb-1 d-block"></i>
+                                        <span class="small fw-bold text-white">Estética Facial Avançada</span>
+                                    </div>
+                                    <div class="tooth-glow-icon mx-auto my-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="url(#pinkGradient)" width="120" height="120">
+                                            <defs>
+                                                <linearGradient id="pinkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                    <stop offset="0%" stop-color="#E91E8C" />
+                                                    <stop offset="100%" stop-color="#C2185B" />
+                                                </linearGradient>
+                                            </defs>
+                                            <path d="M12 2C8.5 2 6 4.5 6 7.5c0 1.7.7 3.2 1.8 4.3.4.4.6 1 .5 1.5l-.5 3c-.2 1.1.7 2 1.8 2h1.4c.5 0 1-.2 1.3-.6l.7-.9.7.9c.3.4.8.6 1.3.6h1.4c1.1 0 2-.9 1.8-2l-.5-3c-.1-.5.1-1.1.5-1.5 1.1-1.1 1.8-2.6 1.8-4.3C18 4.5 15.5 2 12 2z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="font-serif italic text-pink mb-2">"Sorria com confiança"</p>
+                                    <h3 class="text-white h5 mb-1">Dra. Nathalia Patricio</h3>
+                                    <p class="text-muted small mb-0">Odontologia & Estética Facial</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE A CLÍNICA -->
+        <section id="sobre" class="py-5 bg-dark-secondary position-relative">
+            <div class="container py-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <div class="glass-card p-4 p-lg-5 position-relative border-glow">
+                            <span class="badge bg-pink-soft text-pink mb-3 px-3 py-2 rounded-pill font-sans">Nossa Essência</span>
+                            <h2 class="font-serif text-white display-6 mb-4">Cuidado completo para o seu sorriso e bem-estar</h2>
+                            <p class="text-light-muted mb-4">
+                                Localizada no A4 Offices na Barra / Recreio, a <strong>Clínica Nathalia Patricio</strong> oferece um atendimento acolhedor, sofisticado e humanizado. Cobrimos todas as especialidades odontológicas com foco em resultados naturais, duradouros e seguros.
+                            </p>
+                            <div class="d-flex align-items-center gap-4 pt-2">
+                                <div>
+                                    <div class="h2 font-serif text-pink fw-bold mb-0">4.7</div>
+                                    <small class="text-muted">Avaliação no Google</small>
+                                </div>
+                                <div class="vr bg-light opacity-25"></div>
+                                <div>
+                                    <div class="h2 font-serif text-pink fw-bold mb-0">55+</div>
+                                    <small class="text-muted">Avaliações Positivas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="glass-card p-4 h-100 feature-hover-card">
+                                    <div class="icon-box-glass mb-3 text-pink">
+                                        <i class="bi bi-gem fs-3"></i>
+                                    </div>
+                                    <h3 class="h5 text-white font-serif mb-2">Lentes em Resina</h3>
+                                    <p class="text-muted small mb-0">Transformação estética com resultado no mesmo dia, garantindo sorriso harmônico, proporcional e natural.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="glass-card p-4 h-100 feature-hover-card">
+                                    <div class="icon-box-glass mb-3 text-pink">
+                                        <i class="bi bi-stars fs-3"></i>
+                                    </div>
+                                    <h3 class="h5 text-white font-serif mb-2">Estética Facial</h3>
+                                    <p class="text-muted small mb-0">Procedimentos faciais integrados para valorizar a sua beleza com total segurança e harmonia estrutural.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="glass-card p-4 h-100 feature-hover-card">
+                                    <div class="icon-box-glass mb-3 text-pink">
+                                        <i class="bi bi-hospital fs-3"></i>
+                                    </div>
+                                    <h3 class="h5 text-white font-serif mb-2">Especialidades Odontológicas</h3>
+                                    <p class="text-muted small mb-0">Equipe preparada e tecnologia avançada para cuidar de cada detalhe da sua saúde bucal.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="glass-card p-4 h-100 feature-hover-card">
+                                    <div class="icon-box-glass mb-3 text-pink">
+                                        <i class="bi bi-heart-fill fs-3"></i>
+                                    </div>
+                                    <h3 class="h5 text-white font-serif mb-2">Atendimento Humanizado</h3>
+                                    <p class="text-muted small mb-0">Ambiente climatizado, moderno e pensado para proporcionar máximo conforto desde o primeiro contato.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRATAMENTOS -->
+        <section id="tratamentos" class="py-5 position-relative">
+            <div class="container py-4">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <span class="badge bg-pink-soft text-pink mb-2 px-3 py-2 rounded-pill font-sans">Nossos Procedimentos</span>
+                    <h2 class="font-serif text-white display-5 fw-bold">Tratamentos de Excelência</h2>
+                    <p class="text-light-muted">Conheça nossos principais serviços desenvolvidos sob medida para rejuvenescer, proteger e valorizar o seu sorriso.</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between treatment-card">
+                            <div>
+                                <div class="treatment-icon mb-3">
+                                    <i class="bi bi-app-indicator text-pink fs-2"></i>
+                                </div>
+                                <h3 class="h5 text-white font-serif mb-2">Lentes em Resina</h3>
+                                <p class="text-muted small mb-4">Sorriso harmônico e natural com confecção e resultado no mesmo dia. Transformação rápida e de alto padrão.</p>
+                            </div>
+                            <button class="btn btn-sm btn-outline-pink w-100" data-bs-toggle="modal" data-bs-target="#modalTratamento" data-titulo="Lentes em Resina" data-descricao="As lentes em resina permitem reesculpir o formato, cor e alinhamento dos dentes de forma minimamente invasiva. O procedimento é realizado com resinas compostas de alta performance, proporcionando um resultado estético impecável e natural no mesmo dia!">
+                                Saber Mais
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between treatment-card">
+                            <div>
+                                <div class="treatment-icon mb-3">
+                                    <i class="bi bi-brightness-high text-pink fs-2"></i>
+                                </div>
+                                <h3 class="h5 text-white font-serif mb-2">Clareamento Dental</h3>
+                                <p class="text-muted small mb-4">Técnicas avançadas em consultório e caseiras para devolver o brilho e a brancura natural dos seus dentes com segurança.</p>
+                            </div>
+                            <button class="btn btn-sm btn-outline-pink w-100" data-bs-toggle="modal" data-bs-target="#modalTratamento" data-titulo="Clareamento Dental" data-descricao="Disponibilizamos clareamento em consultório para resultados rápidos e potentes, além do clareamento caseiro supervisionado para manter o sorriso radiante por muito mais tempo, com controle total de sensibilidade.">
+                                Saber Mais
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between treatment-card">
+                            <div>
+                                <div class="treatment-icon mb-3">
+                                    <i class="bi bi-shield-plus text-pink fs-2"></i>
+                                </div>
+                                <h3 class="h5 text-white font-serif mb-2">Limpeza e Avaliação</h3>
+                                <p class="text-muted small mb-4">Profilaxia completa associada a exames radiográficos detalhados para prevenir problemas e garantir gengivas saudáveis.</p>
+                            </div>
+                            <button class="btn btn-sm btn-outline-pink w-100" data-bs-toggle="modal" data-bs-target="#modalTratamento" data-titulo="Limpeza e Avaliação com Exames" data-descricao="A profilaxia remove placa bacteriana e tártaro de forma indolor. Acompanhada de avaliação clínica e exames radiográficos, garante diagnóstico precoce e prevenção total da saúde bucal.">
+                                Saber Mais
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between treatment-card">
+                            <div>
+                                <div class="treatment-icon mb-3">
+                                    <i class="bi bi-sliders text-pink fs-2"></i>
+                                </div>
+                                <h3 class="h5 text-white font-serif mb-2">Planejamento do Sorriso</h3>
+                                <p class="text-muted small mb-4">Estudo personalizado da proporção facial e dental para desenhar o sorriso ideal para o seu perfil e desejos.</p>
+                            </div>
+                            <button class="btn btn-sm btn-outline-pink w-100" data-bs-toggle="modal" data-bs-target="#modalTratamento" data-titulo="Planejamento Personalizado do Sorriso" data-descricao="Um projeto digital e estético exclusivo onde analisamos cada traço do seu rosto, mordida e gengiva para planejar o tratamento perfeito com previsibilidade absoluta.">
+                                Saber Mais
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between treatment-card">
+                            <div>
+                                <div class="treatment-icon mb-3">
+                                    <i class="bi bi-magic text-pink fs-2"></i>
+                                </div>
+                                <h3 class="h5 text-white font-serif mb-2">Estética Facial</h3>
+                                <p class="text-muted small mb-4">Procedimentos estéticos faciais integrados para rejuvenescer e realçar seus traços com total harmonia.</p>
+                            </div>
+                            <button class="btn btn-sm btn-outline-pink w-100" data-bs-toggle="modal" data-bs-target="#modalTratamento" data-titulo="Estética Facial" data-descricao="Tratamentos faciais modernos planejados para valorizar a simetria, suavizar linhas de expressão e promover jovialidade em harmonia com o novo sorriso.">
+                                Saber Mais
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between treatment-card">
+                            <div>
+                                <div class="treatment-icon mb-3">
+                                    <i class="bi bi-clipboard2-pulse text-pink fs-2"></i>
+                                </div>
+                                <h3 class="h5 text-white font-serif mb-2">Especialidades Odontológicas</h3>
+                                <p class="text-muted small mb-4">Ortodontia, implantes, periodontia, endodontia, odontopediatria e harmonização orofacial.</p>
+                            </div>
+                            <!-- <!-- CONFIRMAR COM A CLÍNICA --> -->
+                            <button class="btn btn-sm btn-outline-pink w-100" data-bs-toggle="modal" data-bs-target="#modalTratamento" data-titulo="Especialidades Odontológicas" data-descricao="Atendimento integral cobrindo ortodontia, implantes, periodontia, endodontia, odontopediatria e harmonização orofacial (confirme disponibilidade específica de horários e especialistas na clínica).">
+                                Saber Mais
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ANTES & DEPOIS INTERATIVO -->
+        <section id="antes-depois" class="py-5 bg-dark-secondary position-relative">
+            <div class="container py-4">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <span class="badge bg-pink-soft text-pink mb-2 px-3 py-2 rounded-pill font-sans">Transformações Reais</span>
+                    <h2 class="font-serif text-white display-5 fw-bold">Antes & Depois</h2>
+                    <p class="text-light-muted">Arraste o cursor ou toque na barra para comparar a transformação do sorriso.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="glass-card p-3 p-md-4 position-relative">
+                            <!-- Slider Interativo -->
+                            <div class="comparison-slider position-relative overflow-hidden rounded-3">
+                                <div class="comparison-img before-img d-flex align-items-center justify-content-center">
+                                    <div class="text-center p-4">
+                                        <span class="badge bg-dark bg-opacity-75 text-light mb-2">Antes</span>
+                                        <p class="text-muted small mb-0"><!-- <!-- EDITAR: Inserir imagem de antes --> --> Sorriso com desalinhamento e cor natural inicial</p>
+                                    </div>
+                                </div>
+                                <div class="comparison-img after-img d-flex align-items-center justify-content-center" id="afterLayer">
+                                    <div class="text-center p-4">
+                                        <span class="badge bg-pink text-white mb-2">Depois (Lentes em Resina)</span>
+                                        <p class="text-light small mb-0"><!-- <!-- EDITAR: Inserir imagem de depois --> --> Sorriso harmônico, alinhado e radiante</p>
+                                    </div>
+                                </div>
+                                <input type="range" min="0" max="100" value="50" class="comparison-range" id="comparisonRange" aria-label="Controle deslizante de comparação antes e depois">
+                                <div class="slider-line" id="sliderLine"></div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <small class="text-muted fst-italic">
+                                    * Resultados variam de pessoa para pessoa. Consulte indicação, condições e disponibilidade do procedimento.
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLAREAMENTO: CONSULTÓRIO VS CASEIRO -->
+        <section id="clareamento" class="py-5 position-relative">
+            <div class="container py-4">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <span class="badge bg-pink-soft text-pink mb-2 px-3 py-2 rounded-pill font-sans">Brilho e Clareza</span>
+                    <h2 class="font-serif text-white display-5 fw-bold">Clareamento Dental Avançado</h2>
+                    <p class="text-light-muted">Escolha a melhor técnica ou combine ambas para resultados duraderos e livres de sensibilidade.</p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="glass-card p-4 p-lg-5 h-100 d-flex flex-column justify-content-between border-glow">
+                            <div>
+                                <div class="d-flex align-items-center gap-3 mb-4">
+                                    <div class="icon-box-glass text-pink">
+                                        <i class="bi bi-lightning-charge fs-3"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="h4 text-white font-serif mb-0">Em Consultório</h3>
+                                        <small class="text-pink">Ação Potente & Rápida</small>
+                                    </div>
+                                </div>
+                                <p class="text-light-muted mb-4">
+                                    Realizado diretamente na clínica com géis clareadores de alta concentração ativados por luz especializada. Ideal para quem busca resultados imediatos e visíveis já na primeira sessão.
+                                </p>
+                                <ul class="list-unstyled text-muted small d-flex flex-column gap-2 mb-4">
+                                    <li><i class="bi bi-check-circle-fill text-pink me-2"></i> Resultados rápidos na primeira sessão</li>
+                                    <li><i class="bi bi-check-circle-fill text-pink me-2"></i> Supervisão profissional integral</li>
+                                    <li><i class="bi bi-check-circle-fill text-pink me-2"></i> Protocolos de proteção gengival</li>
+                                </ul>
+                            </div>
+                            <a href="https://wa.me/5521995103410?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20clareamento%20em%20consultório." target="_blank" rel="noopener" class="btn btn-outline-pink w-100">
+                                Quero este método
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="glass-card p-4 p-lg-5 h-100 d-flex flex-column justify-content-between border-glow">
+                            <div>
+                                <div class="d-flex align-items-center gap-3 mb-4">
+                                    <div class="icon-box-glass text-pink">
+                                        <i class="bi bi-house-heart fs-3"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="h4 text-white font-serif mb-0">Caseiro Supervisionado</h3>
+                                        <small class="text-pink">Manutenção & Conforto</small>
+                                    </div>
+                                </div>
+                                <p class="text-light-muted mb-4">
+                                    Utiliza moldeiras personalizadas confeccionadas sob medida para você aplicar o gel clareador em casa. Tratamento contínuo que potencializa e mantém a cor branca por muito mais tempo com mínima sensibilidade.
+                                </p>
+                                <ul class="list-unstyled text-muted small d-flex flex-column gap-2 mb-4">
+                                    <li><i class="bi bi-check-circle-fill text-pink me-2"></i> Maior durabilidade do branqueamento</li>
+                                    <li><i class="bi bi-check-circle-fill text-pink me-2"></i> Moldeiras sob medida super confortáveis</li>
+                                    <li><i class="bi bi-check-circle-fill text-pink me-2"></i> Controle individual de sensibilidade</li>
+                                </ul>
+                            </div>
+                            <a href="https://wa.me/5521995103410?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20clareamento%20caseiro." target="_blank" rel="noopener" class="btn btn-outline-pink w-100">
+                                Quero este método
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIFERENCIAIS -->
+        <section id="diferenciais" class="py-5 bg-dark-secondary position-relative">
+            <div class="container py-4">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <span class="badge bg-pink-soft text-pink mb-2 px-3 py-2 rounded-pill font-sans">Por que nos escolher</span>
+                    <h2 class="font-serif text-white display-5 fw-bold">Nossos Diferenciais</h2>
+                    <p class="text-light-muted">Pilares que asseguram a excelência em cada atendimento na Clínica Nathalia Patricio.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card p-4 h-100">
+                            <div class="text-pink mb-3 fs-2"><i class="bi bi-clock-history"></i></div>
+                            <h3 class="h5 text-white font-serif mb-2">Resultado no Mesmo Dia</h3>
+                            <p class="text-muted small mb-0">Agilidade com rigor técnico em procedimentos estéticos como lentes em resina.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card p-4 h-100">
+                            <div class="text-pink mb-3 fs-2"><i class="bi bi-brush"></i></div>
+                            <h3 class="h5 text-white font-serif mb-2">Lentes Personalizadas</h3>
+                            <p class="text-muted small mb-0">Esculpidas exclusivamente para valorizar a anatomia e a expressão natural do seu rosto.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card p-4 h-100">
+                            <div class="text-pink mb-3 fs-2"><i class="bi bi-emoji-smile"></i></div>
+                            <h3 class="h5 text-white font-serif mb-2">Sorriso Harmônico e Natural</h3>
+                            <p class="text-muted small mb-0">Foco absoluto em harmonia estética, evitando excessos e preservando a naturalidade.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card p-4 h-100">
+                            <div class="text-pink mb-3 fs-2"><i class="bi bi-compass"></i></div>
+                            <h3 class="h5 text-white font-serif mb-2">Planejamento Exclusivo</h3>
+                            <p class="text-muted small mb-0">Cada paciente recebe um plano detalhado alinhado às suas expectativas e necessidades de saúde.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card p-4 h-100">
+                            <div class="text-pink mb-3 fs-2"><i class="bi bi-building"></i></div>
+                            <h3 class="h5 text-white font-serif mb-2">Consultório Moderno</h3>
+                            <p class="text-muted small mb-0">Instalações sofisticadas no A4 Offices, equipadas com tecnologia de ponta na Barra / Recreio.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="glass-card p-4 h-100">
+                            <div class="text-pink mb-3 fs-2"><i class="bi bi-people"></i></div>
+                            <h3 class="h5 text-white font-serif mb-2">Atendimento Humanizado</h3>
+                            <p class="text-muted small mb-0">Cuidado atencioso, escuta ativa e acolhimento em todas as etapas do seu tratamento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMO FUNCIONA (PASSO A PASSO) -->
+        <section class="py-5 position-relative">
+            <div class="container py-4">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <span class="badge bg-pink-soft text-pink mb-2 px-3 py-2 rounded-pill font-sans">Jornada do Sorriso</span>
+                    <h2 class="font-serif text-white display-5 fw-bold">Como Funciona o Atendimento</h2>
+                    <p class="text-light-muted">Um processo simples, transparente e estruturado para cuidar de você.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="glass-card p-4 h-100 position-relative">
+                            <span class="step-number">01</span>
+                            <h3 class="h5 text-white font-serif mb-2 mt-3">Avaliação & Exames</h3>
+                            <p class="text-muted small mb-0">Consulta inicial detalhada com exames radiográficos para diagnóstico preciso.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="glass-card p-4 h-100 position-relative">
+                            <span class="step-number">02</span>
+                            <h3 class="h5 text-white font-serif mb-2 mt-3">Planejamento</h3>
+                            <p class="text-muted small mb-0">Desenho estético personalizado e apresentação das melhores opções para seu caso.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="glass-card p-4 h-100 position-relative">
+                            <span class="step-number">03</span>
+                            <h3 class="h5 text-white font-serif mb-2 mt-3">Tratamento</h3>
+                            <p class="text-muted small mb-0">Execução do procedimento com técnicas avançadas, conforto e segurança.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="glass-card p-4 h-100 position-relative">
+                            <span class="step-number">04</span>
+                            <h3 class="h5 text-white font-serif mb-2 mt-3">Acompanhamento</h3>
+                            <p class="text-muted small mb-0">Retornos periódicos para garantir longevidade, saúde e brilho ao seu sorriso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEPOIMENTOS -->
+        <section id="depoimentos" class="py-5 bg-dark-secondary position-relative">
+            <div class="container py-4">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <span class="badge bg-pink-soft text-pink mb-2 px-3 py-2 rounded-pill font-sans">Histórias de Sucesso</span>
+                    <h2 class="font-serif text-white display-5 fw-bold">O Que Dizem Nossos Pacientes</h2>
+                    <div class="d-inline-flex align-items-center gap-2 mt-2 px-3 py-1 rounded-pill glass-badge">
+                        <span class="text-warning">★★★★★</span>
+                        <span class="text-white small">Nota 4,7 / 5 no Google</span>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Depoimento Real -->
+                                <div class="carousel-item active">
+                                    <div class="glass-card p-4 p-lg-5 text-center">
+                                        <div class="text-warning mb-3 fs-4">★★★★★</div>
+                                        <p class="font-serif italic text-white lead mb-4">
+                                            "Acompanho a Dra. Nathalia desde os meus 18 anos, e hoje com 25 posso dizer que ela transformou minha relação com a odontologia. Resolvi todo o meu caso odontológico em cerca de um ano com um carinho, paciência e profissionalismo impecáveis!"
+                                        </p>
+                                        <h5 class="text-pink mb-1 font-serif">Maria Rita Torres</h5>
+                                        <small class="text-muted">Paciente há 7 anos · Avaliação Google</small>
+                                    </div>
+                                </div>
+                                <!-- Exemplo Editável 1 -->
+                                <div class="carousel-item">
+                                    <div class="glass-card p-4 p-lg-5 text-center">
+                                        <div class="text-warning mb-3 fs-4">★★★★★</div>
+                                        <p class="font-serif italic text-white lead mb-4">
+                                            "Fiz minhas lentes em resina com a Dra. Nathalia e o resultado foi no mesmo dia! Superou todas as minhas expectativas. Atendimento de excelência na Barra."
+                                        </p>
+                                        <h5 class="text-pink mb-1 font-serif"><!-- <!-- EDITAR: Nome do paciente --> -->Paciente Verificado</h5>
+                                        <small class="text-muted">Avaliação Google</small>
+                                    </div>
+                                </div>
+                                <!-- Exemplo Editável 2 -->
+                                <div class="carousel-item">
+                                    <div class="glass-card p-4 p-lg-5 text-center">
+                                        <div class="text-warning mb-3 fs-4">★★★★★</div>
+                                        <p class="font-serif italic text-white lead mb-4">
+                                            "Clínica impecável, moderna e aconchegante. O clareamento dental superou o que eu imaginava sem causar nenhuma sensibilidade incômoda."
+                                        </p>
+                                        <h5 class="text-pink mb-1 font-serif"><!-- <!-- EDITAR: Nome do paciente --> -->Paciente Verificado</h5>
+                                        <small class="text-muted">Avaliação Google</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <a href="https://www.google.com/search?q=Clínica+Nathalia+Patricio" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light">
+                                <i class="bi bi-google me-2"></i> Ver todas as avaliações no Google
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ (ACCORDION) -->
+        <section class="py-5 position-relative">
+            <div class="container py-4">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <span class="badge bg-pink-soft text-pink mb-2 px-3 py-2 rounded-pill font-sans">Dúvidas Frequentes</span>
+                    <h2 class="font-serif text-white display-5 fw-bold">Perguntas Frequentes</h2>
+                    <p class="text-light-muted">Esclareça suas principais dúvidas sobre consultas, tratamentos e estrutura.</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion custom-accordion" id="faqAccordion">
+                            <!-- FAQ 1 -->
+                            <div class="accordion-item glass-card mb-3 border-0 overflow-hidden">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed bg-transparent text-white shadow-none fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Como funciona a primeira consulta e avaliação?
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small">
+                                        Na primeira consulta realizamos uma avaliação clínica detalhada, escutamos suas expectativas e necessidades, e solicitamos os exames radiográficos necessários para estruturar um planejamento personalizado.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="accordion-item glass-card mb-3 border-0 overflow-hidden">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed bg-transparent text-white shadow-none fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Quais são as formas de pagamento aceitas?
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small">
+                                        <!-- <!-- EDITAR: Inserir formas de pagamento oficiais --> -->
+                                        Aceitamos cartão de crédito, PIX e transferência bancária. Consulte condições especiais de parcelamento diretamente pelo nosso WhatsApp.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="accordion-item glass-card mb-3 border-0 overflow-hidden">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed bg-transparent text-white shadow-none fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Quanto tempo duram as lentes em resina?
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small">
+                                        Com os cuidados de higiene adequados e manutenções periódicas recomendadas pela Dra. Nathalia, as lentes em resina apresentam excelente durabilidade e mantêm o brilho e a estética por vários anos.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div class="accordion-item glass-card mb-3 border-0 overflow-hidden">
+                                <h3 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed bg-transparent text-white shadow-none fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        O clareamento dental causa sensibilidade?
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small">
+                                        Utilizamos protocolos modernos com géis dessensibilizantes de alta qualidade e acompanhamento rigoroso para minimizar ou eliminar qualquer desconforto durante e após o clareamento.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 5 -->
+                            <div class="accordion-item glass-card mb-3 border-0 overflow-hidden">
+                                <h3 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed bg-transparent text-white shadow-none fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Como faço para agendar uma consulta?
+                                    </button>
+                                </h3>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small">
+                                        Você pode agendar de forma rápida e prática clicando em qualquer botão de WhatsApp em nosso site ou preenchendo o formulário de agendamento na seção de contato.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 6 -->
+                            <div class="accordion-item glass-card mb-3 border-0 overflow-hidden">
+                                <h3 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed bg-transparent text-white shadow-none fw-500" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Há estacionamento disponível no A4 Offices?
+                                    </button>
+                                </h3>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted small">
+                                        <!-- <!-- EDITAR: Confirmar detalhes do estacionamento --> -->
+                                        Sim, o edifício A4 Offices conta com estacionamento rotativo para visitantes e facilidade de acesso na Av. das Américas.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCALIZAÇÃO E CONTATO (COM FORMULÁRIO WHATSAPP) -->
+        <section id="contato" class="py-5 bg-dark-secondary position-relative">
+            <div class="container py-4">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <span class="badge bg-pink-soft text-pink mb-2 px-3 py-2 rounded-pill font-sans">Fale Conosco</span>
+                    <h2 class="font-serif text-white display-5 fw-bold">Localização e Agendamento</h2>
+                    <p class="text-light-muted">Venha nos visitar na Barra / Recreio ou agende seu horário online em segundos.</p>
+                </div>
+
+                <div class="row g-4 align-items-stretch">
+                    <!-- Info & Map -->
+                    <div class="col-lg-6">
+                        <div class="glass-card p-4 p-lg-5 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="h4 text-white font-serif mb-4">Clínica Nathalia Patricio</h3>
+                                
+                                <div class="d-flex align-items-start gap-3 mb-3">
+                                    <i class="bi bi-geo-alt text-pink fs-4 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white d-block">Endereço</strong>
+                                        <span class="text-muted small">Av. das Américas, 13685 - Sala 379 (A4 Offices)<br>Barra / Recreio, Rio de Janeiro - RJ, CEP 22790-701</span>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-start gap-3 mb-3">
+                                    <i class="bi bi-whatsapp text-pink fs-4 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white d-block">WhatsApp / Telefone</strong>
+                                        <a href="https://wa.me/5521995103410" target="_blank" rel="noopener" class="text-muted small text-decoration-none hover-pink">(21) 99510-3410</a>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-start gap-3 mb-3">
+                                    <i class="bi bi-instagram text-pink fs-4 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white d-block">Instagram</strong>
+                                        <a href="https://instagram.com/clinicanathaliapatricio" target="_blank" rel="noopener" class="text-muted small text-decoration-none hover-pink">@clinicanathaliapatricio</a>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-start gap-3 mb-4">
+                                    <i class="bi bi-clock text-pink fs-4 mt-1"></i>
+                                    <div>
+                                        <strong class="text-white d-block">Horário de Atendimento</strong>
+                                        <span class="text-muted small" id="horarioFuncionamentoText">Segunda a Sexta, das 08:00 às 18:00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-column flex-sm-row gap-3">
+                                <a href="https://maps.google.com/?q=Av.+das+Américas,+13685+-+Sala+379+A4+Offices+Rio+de+Janeiro" target="_blank" rel="noopener" class="btn btn-outline-light w-100">
+                                    <i class="bi bi-map me-2"></i> Como Chegar
+                                </a>
+                                <a href="https://wa.me/5521995103410" target="_blank" rel="noopener" class="btn btn-glow w-100">
+                                    <i class="bi bi-whatsapp me-2"></i> WhatsApp
+                                </a>
+                            </div>
+
+                            <!-- Google Maps Iframe -->
+                            <div class="mt-4 rounded-3 overflow-hidden border border-light border-opacity-10" style="height: 200px;">
+                                <iframe title="Mapa de Localização da Clínica" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.5!2d-43.4611!3d-23.0035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAwJzEyLjYiUyA0M8KwMjcnMzkuNiJX!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Agendamento WhatsApp Form -->
+                    <div class="col-lg-6">
+                        <div class="glass-card p-4 p-lg-5 h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="h4 text-white font-serif mb-2">Agende sua Avaliação</h3>
+                                <p class="text-muted small mb-4">Preencha os campos abaixo. O formulário montará automaticamente sua mensagem para envio instantâneo via WhatsApp.</p>
+
+                                <form id="whatsappForm" class="needs-validation" novalidate>
+                                    <div class="mb-3">
+                                        <label for="nomePaciente" class="form-label text-light small">Seu Nome *</label>
+                                        <input type="text" class="form-control glass-input text-white" id="nomePaciente" placeholder="Digite seu nome completo" required>
+                                        <div class="invalid-feedback">Por favor, informe seu nome.</div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="telefonePaciente" class="form-label text-light small">Seu Telefone / WhatsApp *</label>
+                                        <input type="tel" class="form-control glass-input text-white" id="telefonePaciente" placeholder="(21) 99999-9999" required>
+                                        <div class="invalid-feedback">Por favor, informe seu telefone.</div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="tratamentoInteresse" class="form-label text-light small">Tratamento de Interesse *</label>
+                                        <select class="form-select glass-input text-white" id="tratamentoInteresse" required>
+                                            <option value="" selected disabled>Selecione o tratamento</option>
+                                            <option value="Lentes em Resina">Lentes em Resina</option>
+                                            <option value="Clareamento Dental">Clareamento Dental</option>
+                                            <option value="Limpeza e Avaliação">Limpeza e Avaliação</option>
+                                            <option value="Planejamento do Sorriso">Planejamento do Sorriso</option>
+                                            <option value="Estética Facial">Estética Facial</option>
+                                            <option value="Especialidades Odontológicas">Especialidades Odontológicas</option>
+                                            <option value="Outro / Geral">Outro / Geral</option>
+                                        </select>
+                                        <div class="invalid-feedback">Selecione um tratamento.</div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="melhorPeriodo" class="form-label text-light small">Melhor Período *</label>
+                                        <select class="form-select glass-input text-white" id="melhorPeriodo" required>
+                                            <option value="" selected disabled>Selecione o período</option>
+                                            <option value="Manhã">Manhã</option>
+                                            <option value="Tarde">Tarde</option>
+                                        </select>
+                                        <div class="invalid-feedback">Selecione o melhor período.</div>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label for="mensagemAdicional" class="form-label text-light small">Mensagem / Observação (Opcional)</label>
+                                        <textarea class="form-control glass-input text-white" id="mensagemAdicional" rows="3" placeholder="Escreva alguma observação se desejar..."></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-glow w-100 py-3">
+                                        <i class="bi bi-whatsapp me-2"></i> Enviar Solicitação via WhatsApp
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-section pt-5 pb-4 border-top border-light border-opacity-10 position-relative">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="logo-icon-wrapper-sm">
+                            <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.5 2 6 4.5 6 7.5c0 1.7.7 3.2 1.8 4.3.4.4.6 1 .5 1.5l-.5 3c-.2 1.1.7 2 1.8 2h1.4c.5 0 1-.2 1.3-.6l.7-.9.7.9c.3.4.8.6 1.3.6h1.4c1.1 0 2-.9 1.8-2l-.5-3c-.1-.5.1-1.1.5-1.5 1.1-1.1 1.8-2.6 1.8-4.3C18 4.5 15.5 2 12 2z"/>
+                            </svg>
+                        </div>
+                        <span class="font-serif text-white h5 mb-0">CLÍNICA NATHALIA PATRICIO</span>
+                    </div>
+                    <p class="text-muted small mb-3">
+                        Sorrisos felizes e autoestima renovada. Odontologia de alta performance e estética facial na Barra / Recreio, Rio de Janeiro - RJ.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="https://instagram.com/clinicanathaliapatricio" target="_blank" rel="noopener" class="social-icon-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/5521995103410" target="_blank" rel="noopener" class="social-icon-link" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white font-serif h6 mb-3">Navegação</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="#inicio" class="footer-link">Início</a></li>
+                        <li><a href="#sobre" class="footer-link">Sobre</a></li>
+                        <li><a href="#tratamentos" class="footer-link">Tratamentos</a></li>
+                        <li><a href="#antes-depois" class="footer-link">Antes & Depois</a></li>
+                        <li><a href="#clareamento" class="footer-link">Clareamento</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h5 class="text-white font-serif h6 mb-3">Serviços</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="#tratamentos" class="footer-link">Lentes em Resina</a></li>
+                        <li><a href="#clareamento" class="footer-link">Clareamento Dental</a></li>
+                        <li><a href="#tratamentos" class="footer-link">Limpeza & Exames</a></li>
+                        <li><a href="#tratamentos" class="footer-link">Estética Facial</a></li>
+                        <li><a href="#tratamentos" class="footer-link">Especialidades</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="text-white font-serif h6 mb-3">Contato Direto</h5>
+                    <p class="text-muted small mb-2"><i class="bi bi-geo-alt text-pink me-2"></i> Av. das Américas, 13685 - Sala 379, Barra / Recreio - RJ</p>
+                    <p class="text-muted small mb-2"><i class="bi bi-whatsapp text-pink me-2"></i> (21) 99510-3410</p>
+                    <p class="text-muted small mb-0"><i class="bi bi-instagram text-pink me-2"></i> @clinicanathaliapatricio</p>
+                </div>
+            </div>
+
+            <div class="pt-4 border-top border-light border-opacity-10 d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                <p class="text-muted small mb-0">© 2026 Clínica Nathalia Patricio. Todos os direitos reservados.</p>
+                <!-- <!-- INSERIR CRO --> -->
+                <p class="text-muted small mb-0">Responsável Técnico: Dra. Nathalia Patricio <!-- Inserir CRO/RJ --></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/5521995103410?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- MODAL DE TRATAMENTO -->
+    <div class="modal fade" id="modalTratamento" tabindex="-1" aria-labelledby="modalTratamentoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content glass-modal text-white border-0">
+                <div class="modal-header border-bottom border-light border-opacity-10">
+                    <h5 class="modal-title font-serif text-pink" id="modalTratamentoLabel">Detalhes do Tratamento</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body py-4">
+                    <h4 id="modalTitulo" class="font-serif text-white mb-3">Título do Tratamento</h4>
+                    <p id="modalDescricao" class="text-muted mb-4">Descrição detalhada do tratamento selecionado.</p>
+                    <a id="modalWhatsAppBtn" href="#" target="_blank" rel="noopener" class="btn btn-glow w-100">
+                        <i class="bi bi-whatsapp me-2"></i> Agendar este Tratamento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

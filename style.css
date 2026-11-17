@@ -1,0 +1,512 @@
+/* ==========================================================================
+   VARIÁVEIS CSS E CONFIGURAÇÕES GLOBAIS
+   ========================================================================== */
+:root {
+    --bg-primary: #1A1220;
+    --bg-secondary: #140E19;
+    --pink-primary: #C2185B;
+    --pink-accent: #E91E8C;
+    --pink-soft: rgba(233, 30, 140, 0.15);
+    --pink-glow: rgba(233, 30, 140, 0.4);
+    --text-light: #F8BBD0;
+    --text-muted: #B0BEC5;
+    --white: #FFFFFF;
+    --glass-bg: rgba(26, 18, 32, 0.65);
+    --glass-border: rgba(233, 30, 140, 0.25);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.font-serif {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.font-sans {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-pink {
+    color: var(--pink-accent) !important;
+}
+
+.bg-pink {
+    background-color: var(--pink-primary) !important;
+}
+
+.bg-pink-soft {
+    background-color: var(--pink-soft) !important;
+}
+
+.text-light-muted {
+    color: var(--text-light) !important;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #FCE4EC, #E91E8C, #C2185B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-dark-secondary {
+    background-color: var(--bg-secondary);
+}
+
+/* ==========================================================================
+   COMPONENTES GLASSMORPHISM
+   ========================================================================== */
+.glass-header {
+    background: rgba(26, 18, 32, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(233, 30, 140, 0.15);
+    transition: all 0.3s ease;
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    border-color: var(--pink-accent);
+    box-shadow: 0 12px 40px 0 var(--pink-glow);
+    transform: translateY(-4px);
+}
+
+.feature-hover-card:hover {
+    transform: translateY(-6px);
+}
+
+.glass-offcanvas {
+    background: rgba(22, 15, 28, 0.95) !important;
+    backdrop-filter: blur(20px);
+}
+
+.glass-badge {
+    background: rgba(233, 30, 140, 0.1);
+    border: 1px solid rgba(233, 30, 140, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+.glass-input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(233, 30, 140, 0.3) !important;
+    backdrop-filter: blur(8px);
+    color: var(--white) !important;
+}
+
+.glass-input:focus {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: var(--pink-accent) !important;
+    box-shadow: 0 0 15px var(--pink-glow) !important;
+}
+
+.glass-modal {
+    background: rgba(26, 18, 32, 0.92) !important;
+    backdrop-filter: blur(24px);
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 20px;
+}
+
+/* ==========================================================================
+   BOTÕES E INTERAÇÕES
+   ========================================================================== */
+.btn-glow {
+    background: linear-gradient(135deg, var(--pink-accent), var(--pink-primary));
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+    font-weight: 500;
+    box-shadow: 0 4px 20px var(--pink-glow);
+    transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+    background: linear-gradient(135deg, #FF4081, #D81B60);
+    color: var(--white);
+    box-shadow: 0 6px 25px rgba(233, 30, 140, 0.7);
+    transform: translateY(-2px);
+}
+
+.btn-glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-glass:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--pink-accent);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn-outline-pink {
+    border: 1px solid var(--pink-accent);
+    color: var(--pink-accent);
+    background: transparent;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-pink:hover {
+    background: var(--pink-accent);
+    color: var(--white);
+    box-shadow: 0 0 15px var(--pink-glow);
+}
+
+/* ==========================================================================
+   NAVBAR E LOGO
+   ========================================================================== */
+.navbar-brand .logo-icon-wrapper {
+    width: 38px;
+    height: 38px;
+    background: var(--pink-soft);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon-wrapper-sm {
+    width: 30px;
+    height: 30px;
+    background: var(--pink-soft);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-svg {
+    width: 22px;
+    height: 22px;
+    fill: var(--pink-accent);
+}
+
+.brand-title {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    line-height: 1;
+}
+
+.brand-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.2;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--pink-accent) !important;
+}
+
+/* ==========================================================================
+   HERO SEÇÃO E BLOBS
+   ========================================================================== */
+.hero-section {
+    position: relative;
+}
+
+.hero-glow-blob {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(194, 24, 91, 0.25) 0%, rgba(26, 18, 32, 0) 70%);
+    border-radius: 50%;
+    z-index: 1;
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+.hero-glow-blob-2 {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(233, 30, 140, 0.2) 0%, rgba(26, 18, 32, 0) 70%);
+    border-radius: 50%;
+    z-index: 1;
+    filter: blur(60px);
+    pointer-events: none;
+}
+
+.organic-frame-glow {
+    position: absolute;
+    inset: -10px;
+    background: linear-gradient(135deg, var(--pink-accent), transparent, var(--pink-primary));
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    filter: blur(20px);
+    opacity: 0.4;
+    animation: morphGlow 8s ease-in-out infinite alternate;
+    z-index: 0;
+}
+
+.organic-image-container {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: morphShape 10s ease-in-out infinite alternate;
+}
+
+@keyframes morphShape {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    50% { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+    100% { border-radius: 70% 30% 30% 70% / 70% 40% 60% 30%; }
+}
+
+@keyframes morphGlow {
+    0% { transform: scale(0.95); opacity: 0.3; }
+    100% { transform: scale(1.05); opacity: 0.6; }
+}
+
+.floating-badge {
+    position: absolute;
+    border-radius: 12px;
+    z-index: 3;
+    animation: floatBadge 4s ease-in-out infinite alternate;
+}
+
+.card-float-1 {
+    top: 10%;
+    left: -20px;
+}
+
+.card-float-2 {
+    bottom: 15%;
+    right: -20px;
+    animation-delay: 2s;
+}
+
+@keyframes floatBadge {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+.tooth-glow-icon {
+    filter: drop-shadow(0 0 15px var(--pink-glow));
+}
+
+/* ==========================================================================
+   ÍCONES E CAIXAS
+   ========================================================================== */
+.icon-box-glass {
+    width: 60px;
+    height: 60px;
+    background: var(--pink-soft);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.treatment-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(233, 30, 140, 0.08);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   ANTES & DEPOIS SLIDER INTERATIVO
+   ========================================================================== */
+.comparison-slider {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    user-select: none;
+}
+
+.comparison-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.before-img {
+    background: linear-gradient(135deg, #2D1B36, #1A1220);
+}
+
+.after-img {
+    background: linear-gradient(135deg, #3D1C48, #261230);
+    width: 50%;
+    z-index: 2;
+    border-right: 2px solid var(--pink-accent);
+}
+
+.comparison-range {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: ew-resize;
+    z-index: 10;
+}
+
+.slider-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: var(--pink-accent);
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   PASSO A PASSO
+   ========================================================================== */
+.step-number {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgba(233, 30, 140, 0.15);
+    line-height: 1;
+}
+
+/* ==========================================================================
+   ACCORDION E FAQ
+   ========================================================================== */
+.custom-accordion .accordion-button:not(.collapsed) {
+    background-color: var(--pink-soft) !important;
+    color: var(--white) !important;
+    box-shadow: none;
+}
+
+.custom-accordion .accordion-button::after {
+    filter: invert(1);
+}
+
+/* ==========================================================================
+   RODAPÉ E BOTÕES FLUTUANTES
+   ========================================================================== */
+.footer-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: var(--pink-accent);
+}
+
+.social-icon-link {
+    width: 36px;
+    height: 36px;
+    background: var(--pink-soft);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink-accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon-link:hover {
+    background: var(--pink-accent);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    animation: pulseWhatsapp 2s infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    color: #FFFFFF;
+}
+
+@keyframes pulseWhatsapp {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 100px;
+    right: 35px;
+    width: 45px;
+    height: 45px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background: var(--pink-accent);
+    color: var(--white);
+}
